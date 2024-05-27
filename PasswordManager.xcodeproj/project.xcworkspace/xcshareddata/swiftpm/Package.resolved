@@ -1,0 +1,24 @@
+{
+  "originHash" : "18e35b134b7e02dd496a5552476a4605b6676e50febb80eecc1cff6a8f0a37dd",
+  "pins" : [
+    {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift.git",
+      "state" : {
+        "revision" : "5e1b02b6a9dac2a759a1d5dbc175c86bd192a608",
+        "version" : "24.0.0"
+      }
+    },
+    {
+      "identity" : "swiftui-custom-textfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/esatgozcu/SwiftUI-Custom-TextField.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "39ab56a35a19fe87749769df32f929ec62bcbc6f"
+      }
+    }
+  ],
+  "version" : 3
+}

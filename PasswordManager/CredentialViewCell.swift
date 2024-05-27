@@ -1,5 +1,5 @@
 //
-//  CredentialView.swift
+//  CredentialViewCell.swift
 //  PasswordManager
 //
 //  Created by Gaurav Ganju on 25/05/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CredentialView: View {
+struct CredentialViewCell: View {
     @State var account: String
     var body: some View {
         HStack {
@@ -22,5 +22,5 @@ struct CredentialView: View {
 }
 
 #Preview {
-    CredentialView(account: "Google")
+    CredentialViewCell(account: "Google")
 }

@@ -11,6 +11,13 @@
 		09B2FAC52C011D7B00F0B6B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B2FAC42C011D7B00F0B6B0 /* ContentView.swift */; };
 		09B2FAC72C011D7D00F0B6B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B2FAC62C011D7D00F0B6B0 /* Assets.xcassets */; };
 		09B2FACA2C011D7D00F0B6B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B2FAC92C011D7D00F0B6B0 /* Preview Assets.xcassets */; };
+		09BE4F322C01218A00F35E6D /* CustomTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 09BE4F312C01218A00F35E6D /* CustomTextField */; };
+		09BE4F342C01244500F35E6D /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4F332C01244500F35E6D /* Credential.swift */; };
+		09BE4F362C012BA700F35E6D /* CredentialViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4F352C012BA700F35E6D /* CredentialViewCell.swift */; };
+		09BE4F3B2C0134C000F35E6D /* CredentialInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4F3A2C0134C000F35E6D /* CredentialInput.swift */; };
+		09BE4F3D2C02979D00F35E6D /* CredentialDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4F3C2C02979D00F35E6D /* CredentialDetailView.swift */; };
+		09F23A0E2C03AE13007F7667 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09F23A0D2C03AE13007F7667 /* KeychainSwift */; };
+		09F23A102C03AE25007F7667 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F23A0F2C03AE25007F7667 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		09B2FAC42C011D7B00F0B6B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09B2FAC62C011D7D00F0B6B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09B2FAC92C011D7D00F0B6B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09BE4F2F2C01213D00F35E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09BE4F332C01244500F35E6D /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		09BE4F352C012BA700F35E6D /* CredentialViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialViewCell.swift; sourceTree = "<group>"; };
+		09BE4F3A2C0134C000F35E6D /* CredentialInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialInput.swift; sourceTree = "<group>"; };
+		09BE4F3C2C02979D00F35E6D /* CredentialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialDetailView.swift; sourceTree = "<group>"; };
+		09F23A0F2C03AE25007F7667 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F23A0E2C03AE13007F7667 /* KeychainSwift in Frameworks */,
+				09BE4F322C01218A00F35E6D /* CustomTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +66,16 @@
 		09B2FAC12C011D7B00F0B6B0 /* PasswordManager */ = {
 			isa = PBXGroup;
 			children = (
+				09BE4F2F2C01213D00F35E6D /* Info.plist */,
+				09BE4F332C01244500F35E6D /* Credential.swift */,
 				09B2FAC22C011D7B00F0B6B0 /* PasswordManagerApp.swift */,
 				09B2FAC42C011D7B00F0B6B0 /* ContentView.swift */,
+				09BE4F352C012BA700F35E6D /* CredentialViewCell.swift */,
+				09BE4F3A2C0134C000F35E6D /* CredentialInput.swift */,
+				09BE4F3C2C02979D00F35E6D /* CredentialDetailView.swift */,
 				09B2FAC62C011D7D00F0B6B0 /* Assets.xcassets */,
 				09B2FAC82C011D7D00F0B6B0 /* Preview Content */,
+				09F23A0F2C03AE25007F7667 /* KeychainManager.swift */,
 			);
 			path = PasswordManager;
 			sourceTree = "<group>";
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = PasswordManager;
+			packageProductDependencies = (
+				09BE4F312C01218A00F35E6D /* CustomTextField */,
+				09F23A0D2C03AE13007F7667 /* KeychainSwift */,
+			);
 			productName = PasswordManager;
 			productReference = 09B2FABF2C011D7B00F0B6B0 /* PasswordManager.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,10 @@
 				Base,
 			);
 			mainGroup = 09B2FAB62C011D7B00F0B6B0;
+			packageReferences = (
+				09BE4F302C01218A00F35E6D /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */,
+				09F23A0C2C03AE13007F7667 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 09B2FAC02C011D7B00F0B6B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B2FAC52C011D7B00F0B6B0 /* ContentView.swift in Sources */,
+				09BE4F3B2C0134C000F35E6D /* CredentialInput.swift in Sources */,
+				09F23A102C03AE25007F7667 /* KeychainManager.swift in Sources */,
+				09BE4F3D2C02979D00F35E6D /* CredentialDetailView.swift in Sources */,
+				09BE4F362C012BA700F35E6D /* CredentialViewCell.swift in Sources */,
 				09B2FAC32C011D7B00F0B6B0 /* PasswordManagerApp.swift in Sources */,
+				09BE4F342C01244500F35E6D /* Credential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +309,8 @@
 				DEVELOPMENT_TEAM = E9869BJ568;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Unlock Your Data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +340,8 @@
 				DEVELOPMENT_TEAM = E9869BJ568;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Unlock Your Data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +382,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09BE4F302C01218A00F35E6D /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/esatgozcu/SwiftUI-Custom-TextField.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		09F23A0C2C03AE13007F7667 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09BE4F312C01218A00F35E6D /* CustomTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09BE4F302C01218A00F35E6D /* XCRemoteSwiftPackageReference "SwiftUI-Custom-TextField" */;
+			productName = CustomTextField;
+		};
+		09F23A0D2C03AE13007F7667 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F23A0C2C03AE13007F7667 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09B2FAB72C011D7B00F0B6B0 /* Project object */;
 }
